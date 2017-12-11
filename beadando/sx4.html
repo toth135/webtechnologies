@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<title>SX4 2006-</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="fooldal.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body class="content" style="max-width:1200px">
+
+<!-- Sidebar/menu -->
+<nav class="sidebar bar-block grey collapse top" style="z-index:3;width:200px" id="mySidebar">
+  <div class="container display-container padding-16">
+    <i onclick="close()" class="fa fa-remove hide-large button display-topright"></i>
+    <div class="wide">
+    	<img src="images/logo.jpg" style="width:100%">
+    </div>
+  </div>
+  <div class="padding-64 large text-grey" style="font-weight:bold">
+    <a href="fooldal.html" class="bar-item button">Főoldal</a>
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="button block grey left-align" id="myBtn">
+      Autók <i class="fa fa-caret-down"></i>
+    </a>
+    <div id="demoAcc" class="bar-block hide padding-large medium">
+      <a href="regiswift.html" class="bar-item button">Swift 1989-2003</a>
+      <a href="ignis.html" class="bar-item button">Ignis 2003-2008</a>
+      <a href="sx4.html" class="bar-item button">SX4 2006-</a>
+      <a href="ujswift.html" class="bar-item button">Swift 2005-2010</a>
+      <a href="wagonr.html" class="bar-item button">Wagon R+ 2000-2005</a>
+    </div>
+  </div>
+  <a href="#footer" class="bar-item button padding">Kapcsolat</a> 
+  <a href="javascript:void(0)" class="bar-item button padding" onclick="document.getElementById('newsletter').style.display='block'">Értesítések</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="bar top hide-large black xlarge">
+  <a href="javascript:void(0)" class="bar-item button padding-24 right" onclick="open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="overlay hide-large" onclick="close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="container xlarge">
+    <p class="left">2006- Suzuki SX4 karosszéria elemek</p>
+  </header>
+
+  <!-- Image header -->
+  <div class="display-container container">
+    <img src="images/sx4.jpg" alt="sx4" style="width:100%">
+  </div>
+
+  <div style="overflow-x:auto;">
+    <table>
+      <tr>
+        <td>
+          <img class="Image" src="images/elemek/sx4_jobbelso.jpg" style="width:100%">
+        </td>
+        <td>Jobb első ajtó</td>
+        <td>Bontott</td>
+        <td>18000 Ft</td>
+      </tr>
+      <tr>
+        <td><img src="images/elemek/sx4_elsolok.jpg" style="width:100%"</td>
+        <td>Első lökhárító</td>
+        <td>Bontott</td>
+        <td>15000 Ft</td>
+      </tr>
+      <tr>
+        <td><img src="images/elemek/sx4_motorhaz.jpg" style="width:100%"</td>
+        <td>Motorháztető</td>
+        <td>Bontott</td>
+        <td>17500 Ft</td>
+      </tr>
+      <tr>
+        <td><img src="images/elemek/sx4_jobbelsosarvedo.jpg" style="width:100%"</td>
+        <td>Jobb első sárvédő</td>
+        <td>Új</td>
+        <td>19000 Ft</td>
+      </tr>
+      <tr>
+        <td><img src="images/elemek/sx4_kuszob.jpg" style="width:100%"</td>
+        <td>Köszöbök</td>
+        <td>Új</td>
+        <td>16000 Ft</td>
+      </tr>
+      <tr>
+        <td><img src="images/elemek/sx4_csomterajto.jpg" style="width:100%"</td>
+        <td>Csomagtér ajtó</td>
+        <td>Bontott</td>
+        <td>19000 Ft</td>
+      </tr>
+      <tr>
+        <td><img src="images/elemek/sx4_hatsolokos.jpg" style="width:100%"</td>
+        <td>Hátsó lökhárító</td>
+        <td>Új</td>
+        <td>22000 Ft</td>
+      </tr>
+      <tr>
+        <td><img src="images/elemek/sx4_jobbhatsoajto.jpg" style="width:100%"</td>
+        <td>Jobb hátsó ajtó</td>
+        <td>Bontott</td>
+        <td>15000 Ft</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="black center padding-24">Powered by Tóth Péter</div>
+
+  <!-- End page content -->
+</div>
+
+<!-- Newsletter Modal -->
+<div id="newsletter" class="modal">
+  <div class="modal-content animate-zoom" style="padding:32px">
+    <div class="container grey center">
+      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove right button transparent xxlarge"></i>
+      <p>Adja meg e-mailt címét, hogy értesítéseket küldhessünk Önnek az új, vagy éppen akciós termékeinkről!</p>
+      <p><input class="input border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="button padding-large red margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Feliratkozás</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// Accordion 
+function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("show") == -1) {
+        x.className += " show";
+    } else {
+        x.className = x.className.replace(" show", "");
+    }
+}
+
+document.getElementById("myBtn").click();
+
+
+// Script to open and close sidebar
+function open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>

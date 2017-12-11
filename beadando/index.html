@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Belépés</title>
+        <link rel="stylesheet" type="text/css" href="belepes_css.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head> 
+        <body>
+            <form name="login" onsubmit="return loginForm()">
+              <div class="imgcontainer">
+                <img src="images/avatar.jpg" alt="Avatar" class="avatar">
+              </div>
+
+              <div class="container">
+                <label><b>Felhasználónév</b></label>
+                <input type="text" placeholder="Írd be a felhasználóneved" name="uname" id="uname" required>
+
+                <label><b>Jelszó</b></label>
+                <input type="password" placeholder="Írd be a jelszavad" name="psw" id="psw" required>
+
+                <input type="button" value="Login" id="submit" onclick="validate()"/>
+              </div>
+            </form>          
+        </body>
+
+   
+</html>
